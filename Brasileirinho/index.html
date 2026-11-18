@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brasileirinho Empório</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img
+          src="assets/logo.png"
+          alt="Logo do Brasileirinho Empório"
+          class="logo"
+        />
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#festas">Festas e Eventos</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="inicio">
+        <h1>
+          Bem-vindo ao
+          <br />
+          <span>Brasileirinho Empório!</span>
+        </h1>
+        <p>
+          Descubra os sabores autênticos do Brasil em nosso empório. Oferecemos
+          uma variedade de produtos típicos, desde alimentos até artesanatos.
+        </p>
+        <a href="#produtos">Conheça nossos produtos</a>
+      </section>
+      <section id="produtos">
+        <h2>Nossos Produtos</h2>
+        <p>Conheça a variedade de produtos do Brasileirinho Empório.</p>
+        <div class="grid-produtos" id="lista-produtos-publicos">
+    <p>Carregando produtos...</p>
+</div>
+      </section>
+      <section id="festas">
+        <div class="conteudo-festas">
+          <h2>Sua festa merece o melhor!</h2>
+          <p>
+            Organizando uma festa ou evento? Conte com o Brasileirinho Empório!
+          </p>
+          <a href="#orcamento">Solicitar orçamento</a>
+        </div>
+      </section>
+      <section id="orcamento">
+        <form id="form-orcamento">
+            <h2>Solicite um Orçamento</h2>
+            <div class="campo-formulario">
+            <label for="nome">Nome:</label>
+            <input 
+                type="text" 
+                id="nome" 
+                name="nome" 
+                placeholder="Digite seu nome"
+                required />
+            <label for="telefone">Telefone:</label>
+            <input 
+                type="tel" 
+                id="telefone" 
+                name="telefone" 
+                placeholder="Digite seu telefone"
+                required />
+            <label for="datafesta">Data da festa:</label>
+            <input 
+                type="date" 
+                id="datafesta" 
+                name="datafesta" 
+                placeholder="Selecione a data da festa"
+                required />
+            <label for="tipoevento">Tipo de evento:</label>
+            <select 
+                id="tipoevento" 
+                name="tipoevento" 
+                placeholder="Selecione o tipo de evento"
+                required>
+                <option value="">Selecione</option>
+                <option value="aniversario">Aniversário</option>
+                <option value="casamento">Casamento</option>
+                <option value="festa">Festa</option>
+            </select>
+            <label for="quantidadepessoas">Quantidade de pessoas:</label>
+            <input 
+                type="number" 
+                id="quantidadepessoas" 
+                name="quantidadepessoas" 
+                placeholder="Digite a quantidade de pessoas"
+                required />
+            <label for="produtos">Produtos:</label>
+            <textarea 
+                id="produtos-desejados" 
+                name="produtos" 
+                rows="4" 
+                placeholder="Digite os produtos desejados"
+                required>
+            </textarea>
+            <button type="submit">Enviar</button>
+        </div>
+        </form>
+      
+<section id="sobre">
+    <div class="container-sobre">
+
+        <div class="imagem-sobre">
+            <img
+                src="assets/sobre.png"
+                alt="Fachada do Brasileirinho Empório"
+            />
+        </div>
+
+        <div class="texto-sobre">
+            <h2>Sobre o Brasileirinho</h2>
+
+            <p>
+                O Brasileirinho Empório é uma conveniência
+                localizada em Presidente Venceslau, oferecendo
+                produtos para o dia a dia.
+            </p>
+
+            <p>
+                Também atendemos festas e eventos,
+                oferecendo soluções em bebidas para
+                momentos especiais.
+            </p>
+
+            <a
+                href="https://www.instagram.com/brasileirinho_emporio/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Conheça nosso Instagram
+            </a>
+        </div>
+
+    </div>
+</section>
+<section id="contato">
+    <h2>Entre em Contato</h2>
+    <p>Venha conhecer o Brasileirinho Empório!</p>
+
+    <div class="container-contato">
+        <div class="informacoes-contato">
+            <h3>Informações</h3>
+
+            <p><strong>Endereço:</strong> A confirmar</p>
+            <p><strong>Telefone:</strong> A confirmar</p>
+            <p><strong>Horário:</strong> A confirmar</p>
+
+            <a href="https://www.instagram.com/brasileirinho_emporio/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Nosso Instagram
+            </a>
+        </div>
+
+        <div class="mapa-contato">
+            <h3>Onde estamos</h3>
+            <p>Presidente Venceslau - SP</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d925.5545736905331!2d-51.84017923895153!3d-21.887668185146488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9491652a2273b783%3A0x4dbe73f5786293f0!2sBrasileirinho%20Conveniencia!5e0!3m2!1spt-BR!2sbr!4v1795038440115!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+    </div>
+</section>
+    </main>
+    <footer>
+    <div class="container-footer">
+        <img
+            src="assets/logo.png"
+            alt="Logo do Brasileirinho Empório"
+            class="logo-footer"
+        />
+
+        <p>© 2026 Brasileirinho Empório. Todos os direitos reservados.</p>
+
+        <p>
+            Desenvolvido por
+            <a href="#" class="link-gvance">GVance</a>
+        </p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

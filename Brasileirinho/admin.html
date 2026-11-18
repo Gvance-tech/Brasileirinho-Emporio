@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel Administrativo | Brasileirinho</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="painel-admin" hidden>
+      <h1>Painel Administrativo</h1>
+      <p>Gerencie os produtos do Brasileirinho Empório.</p>
+
+      <form id="form-produto">
+        <div class="campo-formulario">
+          <label for="nome-produto">Nome do produto</label>
+          <input type="text" id="nome-produto" placeholder="Nome do produto" required />
+        </div>
+
+        <div class="campo-formulario">
+          <label for="categoria-produto">Categoria</label>
+          <input type="text" id="categoria-produto" placeholder="Categoria" required />
+        </div>
+
+        <div class="campo-formulario">
+          <label for="descricao-produto">Descrição</label>
+          <textarea id="descricao-produto" placeholder="Descrição do produto"></textarea>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="tipo-imagem">Como deseja adicionar a imagem?</label>
+
+          <select id="tipo-imagem">
+            <option value="url">Utilizar URL</option>
+            <option value="arquivo">Enviar arquivo</option>
+          </select>
+        </div>
+
+        <div class="campo-formulario" id="campo-url">
+          <label for="imagem-produto">URL da imagem</label>
+
+          <input
+            type="url"
+            id="imagem-produto"
+            placeholder="https://exemplo.com/imagem.jpg"
+          />
+        </div>
+
+        <div class="campo-formulario" id="campo-arquivo" hidden>
+          <label for="arquivo-produto">Selecionar imagem</label>
+
+          <input
+            type="file"
+            id="arquivo-produto"
+            accept="image/jpeg,image/png,image/webp"
+          />
+        </div>
+        <button type="submit">Cadastrar produto</button>
+      </form>
+
+      <h2>Produtos cadastrados</h2>
+      <div id="lista-produtos"></div>
+
+      <button type="button" id="sair-admin">Sair do painel</button>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script src="admin.js"></script>
+  </body>
+</html>
